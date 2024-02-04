@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Recorder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8iS13DJNXMl1I7SR79z4BkNq+1n1JKcb7LMT5nL9O6PUnhXWcl0Yl/RE+L" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sixtyfour&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="content">
+    <h1 class="glow-on-hover">Digital Forensics</h1>
+    <h2 class="glow-on-hover">HTML Recorder</h2>
+    <div class="buttons-container">
+      <button onclick="startRecording()" class="button top-right">Iniciar Grabación</button>
+      <button onclick="stopRecording()" disabled class="button middle">Detener Grabación</button>
+      <button onclick="downloadVideo()" disabled class="button bottom-left">Descargar Grabación</button>
+    </div>
+    <div>
+      <video id="recordedVideo" width="0" height="0" controls></video>
+    </div>
+    <div class="social-links">
+      <a href="https://nullitsdll.Github.io" class="tooltip-container" onmouseover="showTooltip('GitHub')" onmouseout="hideTooltip()">
+        <img src="Github.png" alt="GitHub">
+      </a>
+      <a href="https://www.youtube.com/@Kisuyr" class="tooltip-container" onmouseover="showTooltip('YouTube')" onmouseout="hideTooltip()">
+        <img src="Youtube.png" alt="YouTube">
+
+      <a href="https://www.youtube.com/@Naincc" class="tooltip-container" onmouseover="showTooltip('YouTube')" onmouseout="hideTooltip()">
+        <img src="Youtube.png" alt="YouTube">
+      </a>
+      </a>
+    </div>    
+  </div>
+  <script src="particles.min.js"></script>
+  <script src="particles-config.js"></script>
+  <script src="script.js"></script>
+  <script src="script-tooltip.js"></script> <!-- Añade este nuevo script para el tooltip -->
+</body>
+</html>
